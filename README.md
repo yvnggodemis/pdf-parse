@@ -4,7 +4,7 @@
 
 # pdf-parse
 
-A cross platform non multithreaded PDF parser/text searcher built in Rust
+A cross platform non multithreaded PDF parser/text parser to search inside PDF documents for certain strings built in Rust.
 
 ## Screenshots
 
