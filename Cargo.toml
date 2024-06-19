@@ -1,0 +1,15 @@
+[package]
+name = "pdfsearcher"
+version = "1.0.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+native-dialog = "0.7.0"
+pdf-extract = "0.7.7"
+rust_search = "2.1.0"
+slint = "1.6.0"
+
+[build-dependencies]
+slint-build = "1.6"
+winresource = "0.1.17"
