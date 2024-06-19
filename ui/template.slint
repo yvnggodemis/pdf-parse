@@ -1,0 +1,73 @@
+import { CheckBox, Button, LineEdit, ProgressIndicator, TextEdit, Spinner, AboutSlint } from "std-widgets.slint";
+
+export component App inherits Window {
+    width: 715px;
+    height: 400px;
+    title: @tr("PDF Searcher");
+    icon: @image-url("../assets/pdf.png");
+    callback fileexplorer();
+    callback search();
+    in-out property <string> texttosearch;
+    in-out property <string> results;
+    Button {
+        text: "Open Directory";
+        x: 471px;
+        y: 15px;
+        clicked => {
+            root.fileexplorer();
+        }
+    }
+
+    LineEdit {
+        x: 125px;
+        y: 15px;
+        input-type: text;
+        read-only: false;
+        text <=> texttosearch;
+    }
+
+    Text {
+        text: "String to Search: ";
+        x: 25px;
+        y: 23px;
+    }
+
+    Button {
+        text: "Search";
+        x: 309px;
+        y: 15px;
+        clicked => {
+            root.search();
+            spinner.visible;
+        }
+    }
+
+    Text {
+        text: "Found Items:";
+        x: 33px;
+        y: 57px;
+    }
+
+    TextEdit {
+        width: 546px;
+        height: 303px;
+        x: 27px;
+        y: 80px;
+        read-only: true;
+        text <=> results;
+    }
+
+    spinner := Spinner {
+        x: 403px;
+        y: 46px;
+        indeterminate: true;
+        visible: false;
+    }
+
+    AboutSlint {
+        width: 110px;
+        height: 42px;
+        x: 594px;
+        y: 284px;
+    }
+}
