@@ -1,3 +1,6 @@
+![Rust Badge](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+
+![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)
 
 # pdf-parse
 
@@ -21,9 +24,3 @@ A cross platform non multithreaded PDF parser/text searcher built in Rust
 
  - [Icon](https://www.flaticon.com/free-icons/pdf)
  - [GUI (Slint)](https://slint.dev/)
-
-## Quick Info
-
-![Rust Badge](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-
-![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)
