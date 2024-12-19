@@ -13,3 +13,13 @@ slint = "1.6.0"
 [build-dependencies]
 slint-build = "1.6"
 winresource = "0.1.17"
+
+[profile.release]
+opt-level = "z"
+lto = "fat"
+debug = false
+codegen-units = 1
+panic = 'abort'
+strip = true
+debug-assertions = false
+overflow-checks = false
